@@ -1,6 +1,6 @@
 {
   "description": "Autotest configuration file for dependency tree detection validation",
-  "version": 1.11,
+  "version": 1.8,
   "base_config": {
     "validate_scan_output": true,
     "_comment_validate_scan_output": "Whether to validate the scan output/exit code. Options: true | false. Default: true",
@@ -44,7 +44,6 @@
         "contains": [
           "anyio",
           "certifi",
-          "colorama",
           "h11",
           "httpcore",
           "idna",
