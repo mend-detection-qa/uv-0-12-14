@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-09-15T02:32:00Z",
+  "packages": {
+    "anyio": {
+      "dependencies": [
+        "idna",
+        "sniffio"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "anyio",
+        "python_versions": ">=3.11"
+      },
+      "version": "4.4.0"
+    },
+    "certifi": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "certifi"
+      },
+      "version": "2024.8.30"
+    },
+    "click": {
+      "dependencies": [
+        "colorama"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "click"
+      },
+      "version": "8.1.7"
+    },
+    "colorama": {
+      "dependencies": [],
+      "group": "main",
+      "marker": "sys_platform == 'win32'",
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "colorama"
+      },
+      "version": "0.4.6"
+    },
+    "h11": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "h11"
+      },
+      "version": "0.14.0"
+    },
+    "httpcore": {
+      "dependencies": [
+        "certifi",
+        "h11"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "httpcore"
+      },
+      "version": "1.0.5"
+    },
+    "httpx": {
+      "dependencies": [
+        "anyio",
+        "certifi",
+        "httpcore",
+        "idna",
+        "sniffio"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "httpx"
+      },
+      "version": "0.27.2"
+    },
+    "idna": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "idna"
+      },
+      "version": "3.8"
+    },
+    "sniffio": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "dist": "sniffio"
+      },
+      "version": "1.3.1"
+    }
+  },
+  "pm": "uv",
+  "pm_version_tested": "0.12.14",
+  "pm_version_under_test": "0.12.14",
+  "project_metadata": {
+    "extras": {
+      "crypto": [
+        "cryptography"
+      ]
+    },
+    "groups": [
+      "main"
+    ],
+    "optional_groups": [
+      "crypto"
+    ],
+    "python_constraint": ">=3.11"
+  },
+  "root": {
+    "dependencies": [
+      "click",
+      "httpx"
+    ],
+    "name": "exit-code-probe",
+    "version": "0.1.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "pyproject.toml",
+  "warnings": [
+    "Optional extra [crypto] (cryptography>=42.0.0, cffi, pycparser) is defined but NOT activated in this tree. Packages cryptography, cffi, pycparser are excluded from expected-tree intentionally — activating the extra via 'uv tree --extra crypto' exercises the uv 0.12.14 exit-code-1 path. If Mend activates extras automatically, expect these packages to appear in actual scan output; the comparator should flag this as a known divergence.",
+    "colorama is included as a dependency of click but gated by marker 'sys_platform == win32'. On Linux scan hosts, Mend may omit it. The comparator must tolerate its absence on non-Windows hosts."
+  ]
+}
